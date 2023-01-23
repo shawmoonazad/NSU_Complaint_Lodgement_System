@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Software Requirement Specification</title>
+        <style>
+                * {
+
+                        margin: 0.20cm;
+                }
+
+
+                #Printbtn {
+                        width: 100px;
+
+                        font-size: 18px;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-weight: 600;
+                        border-radius: 10px;
+                        background-color: rgba(0, 0, 0, 0.418);
+
+                        cursor: pointer;
+
+                }
+        </style>
+</head>
+
+<body>
+        <div class="hyperlink">
+                <a href="#section-1">1. Introduction</a></br></br>
+                <a href="#section-2">2. Overall Description</a></br></br>
+                <a href="#section-3">3. External Interface Requirements</a> </br></br>
+                <a href="#section-4">4. System Features</a></br></br>
+                <a href="#section-5">5. Other Non-Functional Requirements</a></br></br>
+                <a href="#section-6">6. Other Requirements</a></br></br>
+        </div>
+
+        <div class="Top_Headings" style="text-align: right; display: block; font-size: large;">
+                <br>
+                <h1>SOFTWARE REQUIREMENT SPECIFICATION (SRS)</h1>
+                <h2>for</h2>
+                <h2>NSU COMPLAINT LODGING SYSTEM</h2>
+                <h4>Created by</h4>
+                <h4>CSE327.3.8</h4>
+                <button id="Printbtn" style="margin-top: 20px;" onclick="window.print()">Print</button>
+        </div>
+
+        <div class="TableofContents">
+
+                <h1>Table of Contents</h1>
+                <h3>Table of Contents</h3>
+                <h3>Revision History</h3>
+
+                <h3>1. Introduction</h3>
+                <pre style="font-size:large; font-family:sans-serif">
+        1.1 Purpose
+        1.2 Document Conventions
+        1.3 Intended Audience and Reading Suggestions 
+        1.4 Product Scope
+        1.5 References <br></pre>
+
+                <h3>2. Overall Description</h3>
+                <pre style="font-size:large; font-family:sans-serif">
+        2.1 Product Perspective 
+        2.2 Product Functions 
+        2.3 User Classes and Characteristics 
+        2.4 Operating Environment 
+        2.5 Design and Implementation Constraints 
+        2.6 User Documentation 
+        2.7 Assumptions and Dependencies </pre>
+
+                <h3>3. External Interface Requirements</h3>
+                <pre style="font-size:large; font-family:sans-serif">
+        3.1 User Interfaces 
+        3.2 Hardware Interfaces 
+        3.3 Software Interfaces 
+        3.4 Communications Interfaces </pre>
+
+                <h3>4. System Features</h3>
+                <pre style="font-size:large; font-family:sans-serif">
+        4.1 System Feature 1 
+        4.2 System Feature 2 (and so on) </pre>
+
+                <h3>5. Other Nonfunctional Requirements</h3>
+                <pre style="font-size:large; font-family:sans-serif">
+        5.1 Performance Requirements 
+        5.2 Safety Requirements 
+        5.3 Security Requirements 
+        5.4 Software Quality Attributes 
+        5.5 Business Rules </pre>
+
+                <h3>6. Other Requirements</h3>
+
+                <p style="font-weight: bold;">
+                        Appendix A: Glossary <br>
+                        Appendix B: Analysis Models <br>
+                        Appendix C: To Be Determined List
+                </p>
+
+        </div>
+        </br>
+        <div>
+            
+                 <!--Section 1 start-->
+                        <h1 style="color: darkblue;"id="section-1"><u>1. Introduction</u></h1>
+        <h3>1.1 Purpose</h3>
+		<p>
+			The purpose of this document is to present a detailed description of the Class Insight. It will explain the 
+            purpose and features of the system, the interfaces of the system, what the system will do, the constraints under 
+            which it must operate and how the system will react to external stimuli. This document is intended for both the 
+            stakeholders and the developers of the system and will be proposed to Nabeel Mohammed for its approval.
+		</p>
+
+		<h3>1.2 Document Conventions</h3>
+		<p>
+			The document is styled according to IEEE SRS template. For Heading we have used Times New Roman at 
+            18 and 14 for Chapter and Topic respectively and have used Times New Roman at 12 for the body.
+
+		</p>
+
+
+		<h3>1.3 Intended Audience and Reading Suggestions </h3>
+		<p>
+			This document is intended for Faculty, Non Faculty staff, helping (gaurds, cleaners), Students, Employee, System Admin.
+
+
+		<h3>1.4 Product Scope </h3>
+		<p>
+			The software system will be lodge complian from Faculty, Non Faculty staff, helping (gaurds, cleaners), Students, Employee, System Admin. This system provides tools for Faculty and students to keep track of their complain system. Admin, Faculty and complian reviewer can make review complains.
+        </p>
+
+        <h3>1.5 References</h3>
+		<p>
+			Google.com
+        </p>
+        
+        
+           <!--Section 1 end -->
+           
+           <!--Section 2 start-->
+    <h1 id="section-2" style="color: darkblue;"><u>2.  Overall Description</u></h1>
+
+            
+			<h3>2.1 Product Perspective</h3>
+         	<p>The system was designed to aid teachers keep interaction between students on their complain of any activities . 
+            This system can be used to lodge and review of complains.</p>
+            
+			
+				<h3>2.2 Product Functions</h3>
+            <h5>The major functions of the system:</h5>
+                 
+                    <p> <ul>
+                        <li>Faculty, Non Faculty staff, helping (gaurds, cleaners), Students, Employee, System Admin can create accounts.</li>
+                        <li>Users can sign in their account</li>
+                        <li>Anyone can be lodge complain  </li>
+                        <li>When they complain, that will be rviewed</li>
+                        <li>They can write complain</li>
+                        <li>Able to do audio complain</li>
+                        <li>Can edit text complain</li>
+                        <li>The system will help to audio to text conversation.</li>
+                    </ul></p>
+                
+            
+            
+			
+			<h3>2.3 User Classes and Characteristics</h3>
+            <p>There are six user classes:
+                
+                    <li>1. System Administrators:<br>
+                        <ul>
+                            <li>Have full access to databases and codes.</li>
+                            <li>Can create Users.</li>
+                            <li>Close any complain. </li>
+                            <li>Edit any complain. </li>
+                        </ul>
+                    </li>
+                    <li>2. Faculty:<br>
+                        <ul>
+                            <li>Access Faculty Homepage.</li>
+                            <li>Create account and sign in.</li>
+                            <li>Lodge Complain.</li>
+                            <li>Review Complain.</li>
+                        </ul>
+
+                        <li>3. Admin Staff:<br>
+                            <ul>
+                                <li>Access Admin Staff Homepage</li>
+                                <li>sign up and sign in.</li>
+                                <li>Lodge Complain.</li>
+                                <li>Review Complain.</li>
+                            </ul>
+
+                            <li>4. Non Faculty Staff:<br>
+                                <ul>
+                                    <li>Create account or sign in </li>
+                                    <li>Lodge Complain</li>
+                                </ul>
+                                
+                            <li>5. Helping Staff:<br>
+                                <ul>
+                                    <li>Create account or sign in </li>
+                                    <li>Lodge Complain</li>
+                                </ul>
+
+                    <li>6. Student:<br>
+                        <ul>
+                            <li>Create account and sign in.</li>
+                            <li>Lodge Complain.</li>
+                        </ul>
+                    </li>                
+            </p>
+            
+			
+			<h3>2.4	Operating Environment</h3>
+            <p>
+                <ol>
+                 <li>Backend:<br>
+                        <ul>
+                            <li>Hardware Platform: x64</li>
+                            <li>Programming Language: Javascript</li>
+                            <li>Web Framework: Node js</li>
+                            <li>Database: MongoDB</li>
+                        </ul>
+                    </li>
+                    <li>Frontend:<br>
+                        <ul>
+                            <li>Web App: <br>
+                                <ol>
+                                    <li>Framework: React</li>
+                                </ol> 
+                            <li>Android App: <br>
+                                <ol>
+                                    <li>Hardware Platform: arm</li>
+									<li>Operating System: Android 5.0</li>
+                                    <li>API 27</li>
+                                    <li>Programming Language: Java</li>
+                                </ol>
+                                
+                            </li>
+                             
+                        </li>
+                        </ul>
+                    </li>
+                    </ol>
+                 </p>
+            
+			
+			<h3>2.5 Design and Implementation Constraints</h3>
+          <p>List of Constraints:
+            <ul>
+                <li>The backend should publish APIs which should be easily integrated with the existing University platform like RDS.</li>
+                <li>The system needs to be designed with an existing standard web and android framework.</li>
+                <li>The system needs to platform independent.</li>
+            </ul>
+          </p>
+                
+            
+			
+			<h3>2.6 User Documentation</h3>
+            <p>The system is designed to be intuitive and user friendly. But if there are 
+                further queries, the user can go through the user manual.
+            </p>
+            
+			<h3>2.7 Assumptions and Dependencies</h3>
+            <p>The system uses external API for accomplishing complicated tasks such as:<br>
+                Speech Recognition using Microsoft Speech API (https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text#speech-to-text-rest-api-v30) 
+                or Google Cloud Vision API (https://centralindia.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1).
+                </p>
+            
+                            <!--Section 2 end -->
+           
+           
+           
+         <!--Section 3 start-->
+           
+           
+           
+    <h1 style="color: darkblue;"id="section-3"><u>3.  External Interface Requirements</u></h1>
+		<h3>3.1  User Interfaces</h3>
+		<p>
+            A login screen will be shown as a user open the software. There the user will able to scan his/her ID card by clicking on a button, another button will allow the user to enter the 
+            information manually. After login, user will see the report section. After clicking on the comment section user can create a complaint or any comments. If they want they also can report a comment. 
+		</p>
+
+		<h3>3.2  Hardware Interfaces</h3>
+		<p>
+			The most important hardware for this complaint lodging app requires smartphone and laptop. 
+            A clear microphone or headphone should be required for audio interactions. 
+            The secondary requirement is an active Internet connection, either by mobile 
+            data or Wi-Fi. This is to communicate with the Google Firebase Server and to make API calls.
+
+
+		</p>
+
+
+		<h3>3.3  Software Interfaces </h3>
+		<p>
+			Native development kit will be used to develop the software. For face and eye detection, local 
+            facial detection library or a third-party online API will be implemented. To make the app fast 
+            and stable, MongoDB database will be used to store the data and sync properly 
+            through APIs. A PDF renderer will be implemented that will let the user to open a large file. 
+
+	   </p>
+
+           <h3>3.4  Communications Interfaces </h3>
+		<p>
+			The software will use APIs to create user account. During the 
+            reading session, app will take complains and send it to the server through API. 
+            During the complain recording session, app will also send the current page, time to server for statistics.
+	   </p>
+       <br><br><br> 
+       
+       
+       <!--Section 3 end -->
+                       <!--Section-4 start-->
+        <h1 style="color: darkblue;" id="section-4"><u>4. System Features</u></h2>
+        <p>This section includes the requirements that describe all the essential functions of the system.
+        <p>The naming convention will follow the following conventions
+      
+<h4 id="sec4.1">1. Log In </h4>
+<ul>
+    <li>Description and Priority: Faculty, Students, admin staff, non faculty teaching staff, helping (guards, cleaners), system Admin should be able to sign up to the system.</li>
+    <li>Response Sequences:  User goes to landing page URL. User clicks on sign up button. User is redirected to the create new profile form. User clicks sign up and is redirected to the homepage. System stores the data given by user for creating report.</li>
+</ul>
+<h4 id="sec4.1">2. Sign Up </h4>
+<ul>
+    <li>Description and Priority: Faculty, Students, admin staff, non faculty teaching staff, helping (guards, cleaners), system Admin should be able to sign up to the system.</li>
+    <li>Response Sequences:  User goes to landing page URL. User clicks on sign up button. User is redirected to the create new profile form. User clicks sign up and is redirected to the homepage. System stores the data given by user for creating report.</li>
+</ul>
+<h4 id="sec4.1">3. Create Report </h4>
+<ul>
+    <li>Description and Priority: User should be able to create report.</li>
+    <li>Response Sequences:  User goes to landing page URL. User is shown a form containing email, password and phone number fields along with forgot password button.  User goes to create report option and create a report. System stores the report in the database. Report can be resolved.</li>
+</ul>
+<h4 id="sec4.1">4. Edit comment </h4>
+<ul>
+    <li>Description and Priority: User can edit a comment.</li>
+    <li>Response Sequences: Users goes to landing page URL. Users shown a form containing email and password fields along with forgot password button.  User clicks login and is redirected to the comment section. Faculty goes to edit comment option and create a new comment. System stores the edited comment in the database.</li>
+</ul>
+<h4 id="sec4.1">5. Create audio comment </h4>
+<ul>
+    <li>Description and Priority: User can create a audio comment in the report section</li>
+    <li>Response Sequences:  User goes to landing page URL. User is shown the audio comment section and click on it. The system keep the audio and convert it with text. </li>
+</ul>
+<h4 id="sec4.1">6. Speech recognition </h4>
+<ul>
+    <li>Response Sequences: The system will take the audio comment and convert it to text conversation. System stores the conversation in database.</li>
+</ul>
+  
+  	
+        <!--section 4 end-->
+        <br><br><br>
+    <!--Section 5 start -->
+    <h1 style="color: darkblue;"id="section-5"><u>5. Other Non-Functional Requirements</u></h1>
+
+    <h4 id="sec5.1">1. Performance Requirements</h4>
+        <p>The system should be able to track users information and speech recognition and store the data in database.</p>       
+        <h5>2. Safety Requirements</h5>
+        <ul>
+            <li>This system may face many threats.</li>
+            <li>This could be someone who discloses the data form the database where it is located, in the registration office.</li>
+            <li>Using false identification. (Fake ID)</li>
+        </ul>
+        
+        <h5>3. Security requirements</h5>
+        <ul>
+            <li>The system will be secured and will respect the user’s privacy. Speech Recognition should be done in client's device</li>
+            <li>Administrator requirements: Only the administrator has the rights to manage any changes in the system. Only the administrator has the rights to manage any changes in the stored data set.</li>
+            <li>On a consistent basis, the registration office should ensure that they have the right information and student’s images.</li>
+            <li>The faculty will have complete control and will require username and password to log into the system.</li>
+            <li>Student’s will require username and password to log into their individual account.</li>
+            <li>Error messages will be popped up, when invalid inputs are given in order to inform the user that the input provided is not accepted.</li>
+        </ul>
+
+<h5>4. Software Quality Attributes</h5>
+
+<ul>
+    <li>Accurate and precise process must be performed by the system to avoid problems.</li>
+    <li>The system must be flexible. Should be easily modified.</li>
+    <li>Execution process must be fast and responsive.</li>
+    <li>The system should possess maintainability, should be able to cope up with any encountered problems. UML will be used in the development process.</li>
+    <li>Ensuring portability. The software is a web-based application and is built in javascript and PostgreSQL so it’s platform independent.</li>
+    
+</ul>
+
+<h5>5.	Business Rules</h5>
+
+    <li>Administrator Requirement: Have a complete control to the system. Will be able to edit, add/remove an user. Ensures valid information.</li>
+    <li>Faculty's Requirement: They can access to student information. The faculty member will be able to control the report. Faculty's job is to add, edit, update and delete any record.</li>
+    <li>Student's Requirement: Students will be able to log into the system and check their resources shared by their faculties.</li>
+        <!--section 5 end-->
+        <br><br><br>
+        <!--section -6 start-->
+        <h1 style="color: darkblue;"id="section-5"><u>6. Other Requirements</u></h1>
+        <p> <b>Database :</b> All the data will be stored in a relational database.
+        <p><b>API :<b> Application Programming Interface. It is a set of routines, protocols, and tools for building software applications.
+                                                                <!--section 6 end-->
+
+
+</body>
+
+</html>
